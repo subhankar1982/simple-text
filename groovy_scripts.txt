@@ -1,0 +1,38 @@
+Sample Groovy scripts-
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo "this is a building stage"
+                echo "Shwetanshu is studying"
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo "this is a testing stage"
+                echo "Shwetanshu is studying"
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                // Combined all echoes into one step block
+                echo "this is a deploy stage"
+                echo "Shwetanshu is studying"
+                echo "This is a deploy stage-I"
+                echo "Shwetanshu is studying A."
+            }
+        }
+
+        stage('Completion') {
+            steps {
+                echo "this is a completion stage"
+                echo "Shwetanshu is studying"
+            }
+        }
+    }
+}
